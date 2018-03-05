@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>compileBitcode</key>
-	<false/>
-	<key>manifest</key>
-	<dict>
-		<key>appURL</key>
-		<string>http://carddownload.longxianghaotian.com:10080/ipawebdownload/jsqp.ipa</string>
-		<key>displayImageURL</key>
-		<string>http://carddownload.longxianghaotian.com:10080/ipawebdownload/57x57.png</string>
-		<key>fullSizeImageURL</key>
-		<string>http://carddownload.longxianghaotian.com:10080/ipawebdownload/512x512.png</string>
-	</dict>
-	<key>method</key>
-	<string>enterprise</string>
-	<key>provisioningProfiles</key>
-	<dict>
-		<key>com.lxht.jsqp</key>
-		<string>jiashengqipai</string>
-	</dict>
-	<key>signingCertificate</key>
-	<string>55A9F091F4ABD8AACE996DBB8BC0FF30D63B57AA</string>
-	<key>signingStyle</key>
-	<string>manual</string>
-	<key>stripSwiftSymbols</key>
-	<true/>
-	<key>teamID</key>
-	<string>VYXVS83DDV</string>
-	<key>thinning</key>
-	<string>&lt;none&gt;</string>
+ <key>items</key>
+ <array>
+  <dict>
+   <key>assets</key>
+   <array>
+    <dict>
+     <key>kind</key>
+     <string>software-package</string>
+     <key>url</key>
+     <!-- http或者https链接的ipa文件地址 -->
+     <string>http://carddownload.longxianghaotian.com:10080/ipawebdownload/jsqp.ipa</string>
+    </dict>
+    <dict>
+     <key>kind</key>
+     <string>full-size-image</string>
+     <key>needs-shine</key>
+     <true/>
+     <key>url</key>
+     <!-- http或者https链接的图片地址，可直接使用app对应的icon（分辨率没强制要求） -->
+     <string>http://carddownload.longxianghaotian.com:10080/ipawebdownload/57x57.png</string>
+    </dict>
+    <dict>
+     <key>kind</key>
+     <string>display-image</string>
+     <key>needs-shine</key>
+     <true/>
+     <key>url</key>
+     <!-- http或者https链接的小图片地址，可直接使用app对应的icon（分辨率没强制要求） -->
+     <string>http://carddownload.longxianghaotian.com:10080/ipawebdownload/512x512.png</string>
+    </dict>
+   </array>
+   <key>metadata</key>
+   <dict>
+    <key>bundle-identifier</key>
+    <!-- BundleID，就是新建app时的包名 -->
+    <string>com.lxht.jsqp</string>
+    <key>bundle-version</key>
+    <!-- 版本号 -->
+    <string>2.0</string>
+    <key>kind</key>
+    <string>software</string>
+    <key>title</key>
+    <!-- 安装app时的提示信息 -->
+    <string>家胜棋牌</string>
+   </dict>
+  </dict>
+ </array>
 </dict>
 </plist>
